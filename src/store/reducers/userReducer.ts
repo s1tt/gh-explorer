@@ -19,6 +19,7 @@ export const userSlice = createSlice({
   reducers: {
     userFetching(state) {
       state.isLoading = true;
+      state.user = null;
     },
     userFetchingSuccess(state, action: PayloadAction<GithubUser>) {
       state.isLoading = false;
