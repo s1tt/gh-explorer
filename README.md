@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">DevFinder</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"><img src="https://socialify.git.ci/s1tt/gh-explorer/image?language=1&amp;name=1&amp;owner=1&amp;theme=Light" alt="project-image"></p>
 
-Currently, two official plugins are available:
+<p id="description">Простое веб-приложение для поиска информации по пользовательскому нику на GitHub с использованием GitHub API. Приложение отображает основную информацию о пользователе.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>🚀 ДЕМО</h2>
 
-## Expanding the ESLint configuration
+[https://gh-explorer-azure.vercel.app/](https://gh-explorer-azure.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h2>Скриншот проекта:</h2>
 
-- Configure the top-level `parserOptions` property like this:
+<img src="https://github.com/s1tt/gh-explorer/assets/40265221/c6606f6a-4e7c-40e7-bf1b-1f0f5b536600" alt="project-screenshot" width="500" height="250/">
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+  
+  
+<h2>🧐 Фичи</h2>
+
+*   Поиск пользователя: введите имя пользователя GitHub чтобы получить и отобразить информацию о пользователе.
+*   Сведения о пользователе: просмотр таких сведений как аватар пользователя биография и общедоступные репозитории.
+*   Переключение тем: переключайтесь между светлыми и темными темами для индивидуального использования.
+*   Технический стек: создан с использованием React Redux Toolkit для управления состоянием и Vite для быстрой разработки.
+
+<h2>🛠️ Установка и Запуск:</h2>
+
+<p>1. Клонировать репозиторий:</p>
+
+```
+git clone https://github.com/s1tt/gh-explorer.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<p>2. Перейти в директорию проекта:</p>
+
+```
+cd gh-explorer
+```
+
+<p>3. Установить зависимости:</p>
+
+```
+npm install
+```
+
+<p>4. Запустить приложение в режиме разработки:</p>
+
+```
+npm run dev
+```
+
+  
+  
+<h2>💻 Используемые технологии</h2>
+
+*   React: JavaScript-библиотека для построения пользовательских интерфейсов.
+*   Redux Toolkit: Упрощает управление состоянием приложения.
+*   Vite: Быстрый и современный бандлер и сервер разработки для JavaScript.
+*   TypeScript: Статически типизированный JavaScript.
+*   Sass: Препроцессор CSS для более удобной работы с стилями.
+*   GitHub API: Для получения информации о пользователях.
+
+<h2>💻 Сценарий использования</h2>
+
+<p>1. Введите ник пользователя GitHub в поле поиска.</p>
+<p>2. Нажмите кнопку "Поиск".</p>
+<p>3. Просматривайте основную информацию о найденном пользователе.</p>
+
+<h2>💻 Сценарий использования</h2>
+
+*   `npm run dev`: Запуск приложения в режиме разработки
+*   `npm run build`: Сборка приложения для production.
+*   `npm run lint`: Запуск линтера для проверки стиля кода.
+*   `npm run preview`: Просмотр собранного приложения.
