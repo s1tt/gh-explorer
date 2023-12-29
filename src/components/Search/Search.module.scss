@@ -9,7 +9,7 @@
   body[data-theme='dark'] {
     --search-bg: var(--gray-400);
     --search-color: var(--white);
-    --search-placeholder-color: var(--white);
+    --search-placeholder-color: var(--gray-200);
     --search-shadow: unset;
   }
 }
@@ -56,6 +56,11 @@
 
   &:focus {
     outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: default;
   }
 
   @media (min-width: 767px) {

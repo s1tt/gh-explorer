@@ -6,13 +6,14 @@ import styles from './Search.module.scss';
 interface SearchProps {
   hasError: boolean;
   onSubmit: (text: string) => void;
+  isDisabled: boolean;
 }
 
 type FormFields = {
   username: HTMLInputElement;
 };
 
-const Search = ({ hasError, onSubmit }: SearchProps) => {
+const Search = ({ hasError, onSubmit, isDisabled }: SearchProps) => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement & FormFields>) => {
     e.preventDefault();
     const text = e.currentTarget.username.value;
@@ -34,9 +35,10 @@ const Search = ({ hasError, onSubmit }: SearchProps) => {
           name='username'
           id='search'
           placeholder='Search GitHub username'
+          disabled={isDisabled}
         />
         {hasError && <div className={styles.error}>No result</div>}
-        <Button>Search</Button>
+        <Button isDisabled={isDisabled}>Search</Button>
       </div>
     </form>
   );

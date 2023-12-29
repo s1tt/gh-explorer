@@ -14,6 +14,8 @@ const UserCard = (props: UserCardProps) => {
         created_at={props.created_at}
         login={props.login}
         name={props.name}
+        email={props.email}
+        html_url={props.html_url}
       />
       <p className={`${styles.bio}${props.bio ? '' : ` ${styles.empty}`}`}>
         {props.bio || 'This profile has no bio'}
